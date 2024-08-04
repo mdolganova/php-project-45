@@ -14,17 +14,17 @@ function primeGame()
     $right = function ($question) {
         $number = (int) $question;
         if ($number === 0) {
-            return 'no';
+            $right = 'no';
         }
         if ($number === 1) {
-            return 'yes';
+            $right = 'yes';
         }
         for ($i = 2; $i < $number; $i++) {
             if ($number % $i === 0) {
-                return 'no';
+                $right = 'no';
             }
         }
-        return 'yes';
+        return $right;
     };
 
     $rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
