@@ -21,6 +21,7 @@ function calcGame()
         $x = (int) $elements[0];
         $y = (int) $elements[2];
         $operand = $elements[1];
+        $result = null;
         switch ($operand) {
             case '+':
                 $result = $x + $y;

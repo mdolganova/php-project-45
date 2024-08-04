@@ -12,7 +12,12 @@ function evenGame()
     };
 
     $right = function ($question) {
-        $right = ($question % 2) ? 'no' : 'yes';
+        $right = '';
+        if ($question % 2 === 0) {
+            $right = 'yes';
+        } else {
+            $right = 'no';
+        }
         return $right;
     };
 

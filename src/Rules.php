@@ -5,7 +5,7 @@ namespace Php\Project\Rules;
 use function cli\line;
 use function cli\prompt;
 
-function greeting($rules)
+function greeting(string $rules)
 {
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?', false, ' ');

@@ -4,7 +4,7 @@ namespace Php\Project\CheckAnswer;
 
 use function cli\line;
 
-function checkAnswer($answer, $right, $name)
+function checkAnswer(string $answer, string $right, string $name)
 {
     if ($answer === $right) {
         $message = 'Correct!';
