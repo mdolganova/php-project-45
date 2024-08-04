@@ -13,11 +13,9 @@ function primeGame()
 
     $right = function ($question) {
         $number = (int) $question;
+        $right = 'yes';
         if ($number === 0) {
             $right = 'no';
-        }
-        if ($number === 1) {
-            $right = 'yes';
         }
         for ($i = 2; $i < $number; $i++) {
             if ($number % $i === 0) {
