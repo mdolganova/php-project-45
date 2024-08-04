@@ -8,12 +8,13 @@ function evenGame()
 {
     $question = function () {
         $question = rand(1, 101);
-        return $question;
+        return (string) $question;
     };
 
     $right = function ($question) {
-        $right = '';
-        if ($question % 2 === 0) {
+        $check = (int) $question;
+        $right = null;
+        if ($check % 2 === 0) {
             $right = 'yes';
         } else {
             $right = 'no';

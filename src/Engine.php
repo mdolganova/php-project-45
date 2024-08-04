@@ -6,7 +6,7 @@ use function Php\Project\Rules\greeting;
 use function Php\Project\GetAnswer\getAnswer;
 use function Php\Project\CheckAnswer\checkAnswer;
 
-function round(string $name, string $question, string $right)
+function round(string $name, $question, $right)
 {
     $item = $question();
     $answer = getAnswer($item);
@@ -15,7 +15,7 @@ function round(string $name, string $question, string $right)
     return $check;
 }
 
-function engine(string $rules, string $question, string $right)
+function engine(string $rules, $question, $right)
 {
     $name = greeting($rules);
     $maxRounds = 3;
