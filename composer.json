@@ -11,7 +11,19 @@
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
-        }
+        },
+        "files": [
+            "src/Games/EvenGame.php",
+            "src/Games/CalcGame.php",
+            "src/Games/GcdGame.php",
+            "src/Games/ProgressionGame.php",
+            "src/Games/PrimeGame.php",
+            "src/Cli.php",
+            "src/Rules.php",
+            "src/GetAnswer.php",
+            "src/CheckAnswer.php",
+            "src/Engine.php"
+        ]
     },
     "authors": [
         {
