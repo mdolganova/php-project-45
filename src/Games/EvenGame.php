@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 function evenGame()
 {
     $question = function () {
-        $question = rand(0, 101);
+        $question = rand(1, 101);
         return $question;
     };
 

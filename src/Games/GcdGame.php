@@ -7,8 +7,8 @@ use function Php\Project\Engine\engine;
 function gcdGame()
 {
     $question = function () {
-        $x = rand(0, 101);
-        $y = rand(0, 101);
+        $x = rand(1, 101);
+        $y = rand(1, 101);
         $expression = "{$x} {$y}";
         return $expression;
     };

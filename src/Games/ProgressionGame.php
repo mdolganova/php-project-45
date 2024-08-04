@@ -7,7 +7,7 @@ use function Php\Project\Engine\engine;
 function progressionGame()
 {
     $question = function () {
-        $start = rand(0, 101);
+        $start = rand(1, 101);
         $step = rand(1, 10);
         $count = rand(5, 10);
         $hide = rand(0, $count - 1);

@@ -10,8 +10,8 @@ function calcGame()
         $operations = ['+', '-', '*'];
         $operationNumber = rand(0, 2);
         $operation = $operations[$operationNumber];
-        $x = rand(0, 101);
-        $y = random_int(0, 101);
+        $x = rand(1, 101);
+        $y = rand(1, 101);
         $expression = "{$x} {$operation} {$y}";
         return $expression;
     };
