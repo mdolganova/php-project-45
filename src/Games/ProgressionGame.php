@@ -35,7 +35,9 @@ function progressionGame()
         if ($position === 0) {
             $hide = (int) $elements[1] - $step;
         } else {
-            $hide = (int) $elements[$position - 1] + $step;
+            $previousPosition = $position - 1;
+            $previous = (int) $elements[$previousPosition];
+            $hide = $previous + $step;
         }
         return (string) $hide;
     };
