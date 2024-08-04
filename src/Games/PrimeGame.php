@@ -7,16 +7,13 @@ use function Php\Project\Engine\engine;
 function primeGame()
 {
     $question = function () {
-        $question = rand(0, 101);
+        $question = rand(1, 101);
         return $question;
     };
 
     $right = function ($question) {
         $number = (int) $question;
         $right = 'yes';
-        if ($number === 0) {
-            $right = 'no';
-        }
         for ($i = 2; $i < $number; $i++) {
             if ($number % $i === 0) {
                 $right = 'no';
