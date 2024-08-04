@@ -14,7 +14,7 @@ function progressionGame()
         $end = $start + $step * ($count - 1);
         $elements = [];
         for ($i = $start; $i <= $end; $i += $step) {
-          $elements[] = $i;
+            $elements[] = $i;
         }
         $elements[$hide] = '..';
         $expression = implode(' ', $elements);
@@ -27,15 +27,15 @@ function progressionGame()
         $i = 0;
         $step = false;
         while (!$step) {
-          if ($elements[$i] !== '..' && $elements[$i + 1] !== '..') {
-            $step = (int) $elements[$i + 1] - (int) $elements[$i];
-          }
-          $i++;
+            if ($elements[$i] !== '..' && $elements[$i + 1] !== '..') {
+                $step = (int) $elements[$i + 1] - (int) $elements[$i];
+            }
+            $i++;
         }
         if ($position === 0) {
-          $hide = (int) $elements[1] - $step;
+            $hide = (int) $elements[1] - $step;
         } else {
-          $hide = (int) $elements[$position - 1] + $step;
+            $hide = (int) $elements[$position - 1] + $step;
         }
         return (string) $hide;
     };

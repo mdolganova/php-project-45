@@ -20,13 +20,13 @@ function gcdGame()
         $iter = min($x, $y);
         $max = 1;
         for ($i = 1; $i <= $iter; $i++) {
-          if (!($x % $i) && !($y % $i)) {
-            $max = $i;
-          }
+            if (!($x % $i) && !($y % $i)) {
+                $max = $i;
+            }
         }
         return (string) $max;
     };
 
     $rules = 'Find the greatest common divisor of given numbers.';
-    engine($rules, $question, $right);   
+    engine($rules, $question, $right);
 }

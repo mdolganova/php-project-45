@@ -22,16 +22,17 @@ function calcGame()
         $y = (int) $elements[2];
         $operand = $elements[1];
         switch ($operand) {
-          case '+':
-            $result = $x + $y;
-            break;
-          case '-':
-            $result = $x - $y;
-            break;
-          case '*':
-            $result = $x * $y;
-            break;
-          default:
+            case '+':
+                $result = $x + $y;
+                break;
+            case '-':
+                $result = $x - $y;
+                break;
+            case '*':
+                $result = $x * $y;
+                break;
+            default:
+                break;
         }
         return (string) $result;
     };

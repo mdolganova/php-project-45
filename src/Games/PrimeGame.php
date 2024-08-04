@@ -14,15 +14,15 @@ function primeGame()
     $right = function ($question) {
         $number = (int) $question;
         if ($number === 0) {
-          return 'no';
+            return 'no';
         }
         if ($number === 1) {
-          return 'yes';
+            return 'yes';
         }
         for ($i = 2; $i < $number; $i++) {
-          if ($number % $i === 0) {
-            return 'no';
-          }
+            if ($number % $i === 0) {
+                return 'no';
+            }
         }
         return 'yes';
     };
