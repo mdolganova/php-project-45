@@ -1,29 +1,9 @@
 {
     "name": "hexlet/code",
-    "bin": [
-        "./bin/brain-games",
-        "./bin/brain-even",
-        "./bin/brain-calc",
-        "./bin/brain-gcd",
-        "./bin/brain-progression",
-        "./bin/brain-prime"
-    ],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
-        },
-        "files": [
-            "src/Cli.php",
-            "src/Rules.php",
-            "src/GetAnswer.php",
-            "src/CheckAnswer.php",
-            "src/Engine.php",
-            "src/Games/EvenGame.php",
-            "src/Games/CalcGame.php",
-            "src/Games/GcdGame.php",
-            "src/Games/ProgressionGame.php",
-            "src/Games/PrimeGame.php"
-        ]
+        }
     },
     "authors": [
         {
