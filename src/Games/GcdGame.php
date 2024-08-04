@@ -20,7 +20,7 @@ function gcdGame()
         $iter = min($x, $y);
         $max = 1;
         for ($i = 1; $i <= $iter; $i++) {
-            if (($x % $i !== 0) && ($y % $i !== 0)) {
+            if (($x % $i === 0) && ($y % $i === 0)) {
                 $max = $i;
             }
         }
