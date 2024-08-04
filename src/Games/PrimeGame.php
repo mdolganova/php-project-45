@@ -13,13 +13,12 @@ function primeGame()
 
     $right = function ($question) {
         $number = (int) $question;
-        $right = 'yes';
         for ($i = 2; $i < $number; $i++) {
             if ($number % $i === 0) {
-                $right = 'no';
+                return 'no';
             }
         }
-        return $right;
+        return 'yes';
     };
 
     $rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
