@@ -23,7 +23,7 @@ function progressionGame()
 
     $right = function ($question) {
         $elements = explode(' ', $question);
-        $position = array_search('..', $elements, false);
+        $position = array_search('..', $elements, true);
         $i = 0;
         $step = null;
         while ($step === null) {
@@ -33,9 +33,9 @@ function progressionGame()
             $i++;
         }
         if ($position === 0) {
-            $hide = (int) $elements[1] - (int) $step;
+            $hide = (int) $elements[1] - $step;
         } else {
-            $hide = (int) $elements[$position - 1] + (int) $step;
+            $hide = (int) $elements[$position - 1] + $step;
         }
         return (string) $hide;
     };
